@@ -1,4 +1,4 @@
-import { Report } from "src/domain/Report";
+import { Report } from "src/domain/report/Report";
 import { ListReportDto } from "./ListReportDto";
 
 export const LIST_REPORT_GATEWAY_NAME = 'ListReportGateway';

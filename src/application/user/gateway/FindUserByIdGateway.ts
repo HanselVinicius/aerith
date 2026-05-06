@@ -1,4 +1,4 @@
-import { User } from 'src/domain/User';
+import { User } from 'src/domain/user/User';
 
 export interface FindUserByIdGateway {
   findUserById(userId: string): User;

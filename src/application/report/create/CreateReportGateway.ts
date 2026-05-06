@@ -1,4 +1,4 @@
-import { Report } from 'src/domain/Report';
+import { Report } from 'src/domain/report/Report';
 
 export const CREATE_REPORT_GATEWAY_NAME = 'CreateRepportGateway';
 

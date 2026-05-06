@@ -1,3 +1,4 @@
 export class ListReportDto {
-    constructor(){}
+    page?:number;
+    limit?:number;
 }

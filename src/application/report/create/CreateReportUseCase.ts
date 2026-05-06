@@ -1,4 +1,4 @@
-import { Report } from 'src/domain/Report';
+import { Report } from 'src/domain/report/Report';
 import { CreateReportDto } from './CreateReportDto';
 import { CreateReportGateway } from './CreateReportGateway';
 

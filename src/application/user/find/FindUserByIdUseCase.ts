@@ -1,6 +1,6 @@
-import { User } from 'src/domain/User';
-import { FindUserByIdDto } from './dto/FindUserDto';
-import { FindUserByIdGateway } from './gateway/FindUserByIdGateway';
+import { User } from 'src/domain/user/User';
+import { FindUserByIdDto } from '../dto/FindUserDto';
+import { FindUserByIdGateway } from '../gateway/FindUserByIdGateway';
 
 export class FindUserByIdUseCase {
   constructor(private readonly findUserByIdGateway: FindUserByIdGateway) {}

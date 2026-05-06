@@ -1,5 +1,5 @@
 import { CreateReportGateway } from 'src/application/report/create/CreateReportGateway';
-import { Report } from 'src/domain/Report';
+import { Report } from 'src/domain/report/Report';
 import { Repository } from 'typeorm';
 import { ReportEntity } from '../../@shared/ReportEntity';
 import { ReportEntityMapper } from '../../@shared/ReportMapper';

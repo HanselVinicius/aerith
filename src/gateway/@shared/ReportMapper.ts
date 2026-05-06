@@ -1,4 +1,4 @@
-import { Report } from 'src/domain/Report';
+import { Report } from 'src/domain/report/Report';
 import { ReportEntity } from './ReportEntity';
 import { UserEntity } from '../user/UserEntity';
 

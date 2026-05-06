@@ -4,9 +4,9 @@ import { ReportEntity } from '../@shared/ReportEntity';
 @Entity()
 export class UserEntity {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  declare id: string;
   @Column()
-  name: string;
+  declare name: string;
   @OneToMany(() => ReportEntity, (repport) => repport.user)
-  repports: ReportEntity[];
+  declare repports: ReportEntity[];
 }
