@@ -2,8 +2,8 @@ import { InjectRepository } from "@nestjs/typeorm";
 import { ListReportDto } from "src/application/report/get/ListReportDto";
 import { ListReportGateway } from "src/application/report/get/ListReportGateway";
 import { Report } from "src/domain/report/Report";
-import { ReportEntity } from "src/gateway/@shared/ReportEntity";
-import { ReportEntityMapper } from "src/gateway/@shared/ReportMapper";
+import { ReportEntity } from "src/gateway/database/@shared/ReportEntity";
+import { ReportEntityMapper } from "src/gateway/database/@shared/ReportMapper";
 import { Repository } from "typeorm";
 
 export class ListReportGatewayImpl implements ListReportGateway {

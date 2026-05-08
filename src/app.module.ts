@@ -2,9 +2,10 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { ReportEntity } from './gateway/@shared/ReportEntity';
-import { UserEntity } from './gateway/user/UserEntity';
 import { ReportModule } from './entrypoint/report/ReportModule';
+import datasource from './gateway/database/datasource';
+import { ReportEntity } from './gateway/database/@shared/ReportEntity';
+import { UserEntity } from './gateway/database/user/UserEntity';
 
 @Module({
   imports: [
@@ -25,4 +26,4 @@ import { ReportModule } from './entrypoint/report/ReportModule';
   ],
   controllers: [AppController],
 })
-export class AppModule {}
+export class AppModule { }

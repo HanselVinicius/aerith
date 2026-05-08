@@ -18,6 +18,13 @@ export class ReportEntityMapper {
       repportEntity.title,
       repportEntity.description,
       repportEntity.user.id,
+      repportEntity.originId,
+      repportEntity.originName,
+      repportEntity.score,
+      repportEntity.ups,
+      repportEntity.isVideo,
+      repportEntity.url,
+      repportEntity.mediaType,
     );
   }
 }

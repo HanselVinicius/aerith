@@ -19,6 +19,7 @@ export class ReportController {
   async createRepport(
     @Body() createReportDto: CreateReportDto,
   ): Promise<{ message: string }> {
+    await this.createReportUseCase.execute(createReportDto);
     return { message: 'NOPE, NOT YET' };
   }
 

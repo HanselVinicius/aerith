@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ReportController } from './ReportController';
 import { CreateReportUseCase } from 'src/application/report/create/CreateReportUseCase';
-import { CreateReportGatewayImpl } from 'src/gateway/report/create/CreateReportGatewayImpl';
+import { CreateReportGatewayImpl } from 'src/gateway/database/report/create/CreateReportGatewayImpl';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ReportEntity } from 'src/gateway/@shared/ReportEntity';
+import { ReportEntity } from 'src/gateway/database/@shared/ReportEntity';
 import { ListReportUseCase } from 'src/application/report/get/ListReportUseCase';
-import { ListReportGatewayImpl } from 'src/gateway/report/list/ListReportGatewayImpl';
+import { ListReportGatewayImpl } from 'src/gateway/database/report/list/ListReportGatewayImpl';
 import { CREATE_REPORT_GATEWAY_NAME } from 'src/application/report/create/CreateReportGateway';
 import { LIST_REPORT_GATEWAY_NAME } from 'src/application/report/get/ListReportGateway';
 
