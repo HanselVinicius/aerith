@@ -18,9 +18,9 @@ export class ReportController {
   @Post()
   async createRepport(
     @Body() createReportDto: CreateReportDto,
-  ): Promise<{ message: string }> {
-    await this.createReportUseCase.execute(createReportDto);
-    return { message: 'NOPE, NOT YET' };
+  ): Promise<{ reportId: string }> {
+    const report = await this.createReportUseCase.execute(createReportDto);
+    return { reportId: report.getId() };
   }
 
   @Get()
