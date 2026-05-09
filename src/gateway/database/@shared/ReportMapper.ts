@@ -9,6 +9,13 @@ export class ReportEntityMapper {
     repportEntity.id = repport.getId();
     repportEntity.title = repport.getTitle();
     repportEntity.user = { id: repport.getUserId() } as UserEntity;
+    repportEntity.originId = repport.getOriginId();
+    repportEntity.originName = repport.getOriginName();
+    repportEntity.score = repport.getScore();
+    repportEntity.ups = repport.getUps();
+    repportEntity.isVideo = repport.getIsVideo();
+    repportEntity.url = repport.getUrl();
+    repportEntity.mediaType = repport.getMediaType();
     return repportEntity;
   }
 
